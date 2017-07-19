@@ -15,7 +15,7 @@ Run `npm install --save angular-owl`
 Adding this code in your file : `app.module.ts`
 
 ```
-import { AppComponent } from './app.component';
+import { AngularOwlComponentModule } from 'angular-owl';
 
 @NgModule({
   imports: [
