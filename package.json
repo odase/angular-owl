@@ -1,0 +1,40 @@
+{
+  "name": "angular-owl",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "dist/bundles/angularowl.umd.js",
+  "module": "dist/index.js",
+  "scripts": {
+    "cleanup": "rimraf dist/bundles dist/src dist/index.d.ts dist/index.metadata.json dist/index.js dist/index.js.map dist/LICENSE dist/README.md",
+    "bundling": "rollup -c",
+    "minify": "uglifyjs dist/bundles/angularowl.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/angularowl.umd.min.js",
+    "copy": "copyfiles LICENSE README.md dist",
+    "build": "npm run cleanup && ngc && npm run bundling && npm run minify && npm run copy"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^4.3.0",
+    "@angular/cdk": "^2.0.0-beta.8",
+    "@angular/common": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.3.0",
+    "@angular/http": "^4.3.0",
+    "@angular/material": "^2.0.0-beta.8",
+    "@angular/platform-browser": "^4.3.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^4.3.0",
+    "@angular/compiler-cli": "^4.3.0",
+    "@types/node": "~6.0.60",
+    "copyfiles": "^1.2.0",
+    "protractor": "~5.1.0",
+    "rimraf": "^2.6.1",
+    "rollup": "^0.45.2",
+    "ts-node": "~2.0.0",
+    "tslint": "~4.5.0",
+    "typescript": "^2.4.1",
+    "uglify-js": "^3.0.25"
+  }
+}
