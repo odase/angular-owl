@@ -18,9 +18,9 @@ import { FormGroup }        from '@angular/forms';
 })
 export class AngularOwlInputTextComponent implements OnInit {
     @Input() form: FormGroup;
-    @Input() subject = <Object>null;
-    @Input() predicate = <String>null;
-    @Input() question = <String>null;
+    @Input() subject : Object = {};
+    @Input() predicate : string = "";
+    @Input() question : string = "";
 
   ngOnInit() {
   }
