@@ -1,4 +1,5 @@
 # Angular OWL Module
+[![npm version](https://badge.fury.io/js/angular-owl.svg)](https://badge.fury.io/js/angular-owl)
 
 ## Install all dependencies
 
