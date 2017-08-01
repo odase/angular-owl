@@ -6,10 +6,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AngularOwlToggleComponent } from './angular-owl-toggle.component';
 import { AngularOwlInputTextComponent } from './angular-owl-input-text.component';
+import { AngularOwlInputDateComponent } from './angular-owl-input-date.component';
 
 import {
     MdInputModule,
-    MdButtonToggleModule
+    MdButtonToggleModule,
+    MdDatepickerModule,
+    MdNativeDateModule
 } from '@angular/material';
 
 @NgModule({
@@ -19,12 +22,15 @@ import {
       ReactiveFormsModule,
       BrowserAnimationsModule,
       MdInputModule,
-      MdButtonToggleModule
+      MdButtonToggleModule,
+      MdDatepickerModule,
+      MdNativeDateModule,
   ],
-  exports: [ AngularOwlToggleComponent, AngularOwlInputTextComponent ],
+  exports: [ AngularOwlToggleComponent, AngularOwlInputTextComponent, AngularOwlInputDateComponent ],
   declarations: [
       AngularOwlToggleComponent,
-      AngularOwlInputTextComponent
+      AngularOwlInputTextComponent,
+      AngularOwlInputDateComponent
   ]
 })
 export class AngularOwlComponentModule { }
