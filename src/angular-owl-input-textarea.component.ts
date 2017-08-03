@@ -3,7 +3,7 @@ import { FormGroup }        from '@angular/forms';
 
 @Component({
   selector: 'ao-input-textarea',
-  template: `<md-input-container>
+  template: `<md-input-container *ngIf="form && form?.controls[predicate] && subject">
       <textarea mdInput
         rows="6" cols="80"
         [placeholder]="question"
