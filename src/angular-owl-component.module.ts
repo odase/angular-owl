@@ -8,6 +8,7 @@ import { AngularOwlToggleComponent } from './angular-owl-toggle.component';
 import { AngularOwlInputTextComponent } from './angular-owl-input-text.component';
 import { AngularOwlInputDateComponent } from './angular-owl-input-date.component';
 import { AngularOwlInputTelComponent } from './angular-owl-input-tel.component';
+import { AngularOwlInputTextareaComponent } from './angular-owl-input-textarea.component';
 
 import {
     MdInputModule,
@@ -27,12 +28,17 @@ import {
       MdDatepickerModule,
       MdNativeDateModule,
   ],
-  exports: [ AngularOwlToggleComponent, AngularOwlInputTextComponent, AngularOwlInputDateComponent, AngularOwlInputTelComponent ],
+  exports: [ AngularOwlToggleComponent,
+      AngularOwlInputTextComponent,
+      AngularOwlInputDateComponent,
+      AngularOwlInputTelComponent,
+      AngularOwlInputTextareaComponent ],
   declarations: [
       AngularOwlToggleComponent,
       AngularOwlInputTextComponent,
       AngularOwlInputDateComponent,
-      AngularOwlInputTelComponent
+      AngularOwlInputTelComponent,
+      AngularOwlInputTextareaComponent
   ]
 })
 export class AngularOwlComponentModule { }
