@@ -11,6 +11,7 @@ import { AngularOwlInputTelComponent } from './angular-owl-input-tel.component';
 import { AngularOwlInputTextareaComponent } from './angular-owl-input-textarea.component';
 
 import {
+    MdIconModule,
     MdInputModule,
     MdButtonToggleModule,
     MdDatepickerModule,
@@ -23,6 +24,7 @@ import {
       FormsModule,
       ReactiveFormsModule,
       BrowserAnimationsModule,
+      MdIconModule,
       MdInputModule,
       MdButtonToggleModule,
       MdDatepickerModule,
