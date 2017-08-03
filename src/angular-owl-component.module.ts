@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AngularOwlToggleComponent } from './angular-owl-toggle.component';
 import { AngularOwlInputTextComponent } from './angular-owl-input-text.component';
 import { AngularOwlInputDateComponent } from './angular-owl-input-date.component';
+import { AngularOwlInputTelComponent } from './angular-owl-input-tel.component';
 
 import {
     MdInputModule,
@@ -26,11 +27,12 @@ import {
       MdDatepickerModule,
       MdNativeDateModule,
   ],
-  exports: [ AngularOwlToggleComponent, AngularOwlInputTextComponent, AngularOwlInputDateComponent ],
+  exports: [ AngularOwlToggleComponent, AngularOwlInputTextComponent, AngularOwlInputDateComponent, AngularOwlInputTelComponent ],
   declarations: [
       AngularOwlToggleComponent,
       AngularOwlInputTextComponent,
-      AngularOwlInputDateComponent
+      AngularOwlInputDateComponent,
+      AngularOwlInputTelComponent
   ]
 })
 export class AngularOwlComponentModule { }
