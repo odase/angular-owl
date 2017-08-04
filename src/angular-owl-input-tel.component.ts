@@ -3,7 +3,7 @@ import { FormGroup }        from '@angular/forms';
 
 @Component({
   selector: 'ao-input-tel',
-  template: `<md-input-container class="example-full-width">
+  template: `<md-input-container *ngIf="form && form?.controls[predicate] && subject">
     <input mdInput [pattern]="pattern"
     [placeholder]="question"
     [formControl]="form?.controls[predicate]"
