@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup }        from '@angular/forms';
 
 @Component({
-  selector: 'ao-input-tel',
+  selector: 'ao-input-email',
   template: `<md-input-container *ngIf="form && form?.controls[predicate] && subject">
     <input type="email" mdInput [pattern]="pattern"
     [placeholder]="question"
