@@ -10,6 +10,7 @@ import { AngularOwlInputDateComponent } from './angular-owl-input-date.component
 import { AngularOwlInputTelComponent } from './angular-owl-input-tel.component';
 import { AngularOwlInputTextareaComponent } from './angular-owl-input-textarea.component';
 import { AngularOwlInputEmailComponent } from './angular-owl-input-email.component';
+import { AngularOwlSelectTypeInputComponent } from './angular-owl-select-type-input.component';
 
 import {
     MdIconModule,
@@ -36,14 +37,16 @@ import {
       AngularOwlInputDateComponent,
       AngularOwlInputTelComponent,
       AngularOwlInputTextareaComponent,
-      AngularOwlInputEmailComponent ],
+      AngularOwlInputEmailComponent,
+      AngularOwlSelectTypeInputComponent ],
   declarations: [
       AngularOwlToggleComponent,
       AngularOwlInputTextComponent,
       AngularOwlInputDateComponent,
       AngularOwlInputTelComponent,
       AngularOwlInputTextareaComponent,
-      AngularOwlInputEmailComponent
+      AngularOwlInputEmailComponent,
+      AngularOwlSelectTypeInputComponent
   ]
 })
 export class AngularOwlComponentModule { }
