@@ -3,7 +3,7 @@ import { FormGroup }        from '@angular/forms';
 
 @Component({
   selector: 'ao-input-text',
-  template: `<md-input-container  *ngIf="form && form?.controls[predicate] && subject">
+  template: `<md-input-container  class="full-width" *ngIf="form && form?.controls[predicate] && subject">
     <input mdInput [placeholder]="question"
     [formControl]="form?.controls[predicate]"
     [(ngModel)]="subject[predicate]">
@@ -14,7 +14,11 @@ import { FormGroup }        from '@angular/forms';
         {{ question }} is <strong>required</strong>
     </md-error>
 </md-input-container>`,
-  styleUrls: []
+styles: [`
+    .full-width {
+        width: 100%;
+      }`
+]
 })
 export class AngularOwlInputTextComponent implements OnInit {
     @Input() form: FormGroup;
