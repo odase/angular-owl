@@ -7,7 +7,7 @@ import 'rxjs/add/operator/map';
   selector: 'ao-select-individual',
   template: `<md-input-container class="full-width">
    <input type="text" mdInput [formControl]="form?.controls[predicate]"
-   [mdAutocomplete]="auto" [(ngModel)]="subject[predicate]">
+   [mdAutocomplete]="auto" [(ngModel)]="subject[predicate]" [placeholder]="question">
     <md-autocomplete #auto="mdAutocomplete" [displayWith]="displayFn">
        <md-option *ngFor="let option of filteredOptions | async" [value]="option">
           {{ option.someLabel["@value"] }}
