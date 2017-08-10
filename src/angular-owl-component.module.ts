@@ -11,13 +11,16 @@ import { AngularOwlInputTelComponent } from './angular-owl-input-tel.component';
 import { AngularOwlInputTextareaComponent } from './angular-owl-input-textarea.component';
 import { AngularOwlInputEmailComponent } from './angular-owl-input-email.component';
 import { AngularOwlSelectTypeInputComponent } from './angular-owl-select-type-input.component';
+import { AngularOwlSelectIndividualComponent } from './angular-owl-select-individual.component';
 
 import {
     MdIconModule,
     MdInputModule,
     MdButtonToggleModule,
     MdDatepickerModule,
-    MdNativeDateModule
+    MdNativeDateModule,
+    MdSelectModule,
+    MdAutocompleteModule
 } from '@angular/material';
 
 @NgModule({
@@ -31,6 +34,8 @@ import {
       MdButtonToggleModule,
       MdDatepickerModule,
       MdNativeDateModule,
+      MdSelectModule,
+      MdAutocompleteModule
   ],
   exports: [ AngularOwlToggleComponent,
       AngularOwlInputTextComponent,
@@ -38,7 +43,8 @@ import {
       AngularOwlInputTelComponent,
       AngularOwlInputTextareaComponent,
       AngularOwlInputEmailComponent,
-      AngularOwlSelectTypeInputComponent ],
+      AngularOwlSelectTypeInputComponent,
+      AngularOwlSelectIndividualComponent ],
   declarations: [
       AngularOwlToggleComponent,
       AngularOwlInputTextComponent,
@@ -46,7 +52,8 @@ import {
       AngularOwlInputTelComponent,
       AngularOwlInputTextareaComponent,
       AngularOwlInputEmailComponent,
-      AngularOwlSelectTypeInputComponent
+      AngularOwlSelectTypeInputComponent,
+      AngularOwlSelectIndividualComponent
   ]
 })
 export class AngularOwlComponentModule { }
